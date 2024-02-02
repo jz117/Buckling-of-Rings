@@ -69,7 +69,7 @@ while i < M
     if abs(effectiveDiameter - initialDiameter) <= tolerance
         % If within tolerance, assume the ring has returned to initial shape
         shapeReturnedToInitial = true;
-        disp('Ring has returned to its initial shape. Stopping simulation.');
+        fprintf('Ring has returned to its initial shape. Stopping simulation on iteration %d.', i);
         break; % Exit the loop
     end
 

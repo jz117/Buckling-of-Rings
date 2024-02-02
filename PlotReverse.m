@@ -14,7 +14,7 @@ keyColors = [0, 0, 1;  % Blue
              1, 0.75, 0]; % Yellow
 
 % Interpolate between key colors to create the colormap
-cm = interp1(linspace(0, 1, size(keyColors, 1)), keyColors, linspace(0, 1, singular));
+cm = interp1(linspace(0, 1, size(keyColors, 1)), keyColors, linspace(0, 1, M));
 
 while i < M
     if i <= singular

@@ -77,7 +77,7 @@ while i < M
             distance = sqrt(dx^2 + dy^2);
         
             if distance <= 2*radius
-                disp('Intersection detected based on radius. Will stop on the next iteration.');
+                fprintf('Intersection detected based on radius. Stopping on iteration %d.', i);
                 intersectionDetected = true;
                 break; % Exit the inner loop
             end

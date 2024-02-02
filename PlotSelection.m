@@ -2,7 +2,7 @@
 % configuratrion and displays the prior configurations too
 
 i = 1;
-final = 793; % Adjust this value such that it's <= final iteration value
+final = 854; % Adjust this value such that it's <= final iteration value
 
 figure;
 hold on; % Hold on to plot multiple frames
@@ -14,7 +14,7 @@ keyColors = [0, 0, 1;  % Blue
              1, 0.75, 0]; % Yellow
 
 % Interpolate between key colors to create the colormap
-cm = interp1(linspace(0, 1, size(keyColors, 1)), keyColors, linspace(0, 1, final));
+cm = interp1(linspace(0, 1, size(keyColors, 1)), keyColors, linspace(0, 1, M));
 
 while i < M
     if i <= final
